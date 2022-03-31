@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a href="index.html" style="text-decoration: none">
+      <button class="again">Restart</button>
+    </a>
+
+    <h1 class="header">A Guessing Game</h1>
+
+    <div class="difficultyButtons">
+      <button class="easyBtn" onclick="setEasy()">Easy</button>
+      <button class="mediumBtn" onclick="setMedium()">Medium</button>
+      <button class="hardBtn" onclick="setHard()">Hard</button>
+    </div>
+
+    <div class="bottomHalf">
+      <form action="#" name="guessForm" class="guessForm">
+        <input type="number" id="numberGuess" required value="1" min="1" />
+
+        <input type="button" class="button" value="Guess" onclick="validateGuess()" />
+
+        <p class="triesLeft"></p>
+        <p class="playerWon"></p>
+        <p class="guessInfo"></p>
+      </form>
+
+      <div class="displayScore">
+        <p>Score: <span id="score">0</span></p>
+        <p>HighScore: <span id="highScore">0</span></p>
+      </div>
+    </div>
+
+    <section id="footer">
+      <div class="easy">
+        <p>Easy: 1 to 20 in 10 tries</p>
+      </div>
+
+      <div class="medium">
+        <p>Medium: 1 to 50 in 7 tries</p>
+      </div>
+
+      <div class="hard">
+        <p>Hard: 1 to 100 in 5 tries. <br> Good luck! *lol</p>
+      </div>
+    </section>
+  </body>
+</html>

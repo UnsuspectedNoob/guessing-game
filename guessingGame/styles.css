@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background-image: url(images/moon.jpg);
+  background-size: 100%;
+  color: #fff;
+}
+
+.again {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.again:hover {
+  background-color: gray;
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+}
+
+.header {
+  font-size: 3.2rem;
+  padding: 2.5rem;
+}
+
+.difficultyButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem 1.5rem;
+}
+
+.difficultyButtons button {
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 3px;
+}
+
+.difficultyButtons button:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.easyBtn {
+  background-color: darkgreen;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.mediumBtn {
+  transition: all 0.3s ease;
+}
+
+.hardBtn {
+  background-color: darkred;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.bottomHalf {
+  width: 30%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  border-radius: 5px;
+}
+
+.bottomHalf input {
+  font-size: 1.5rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-weight: bold;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+}
+
+#footer div {
+  padding: 5% 0.5%;
+}
+
+form {
+  padding-top: 10px;
+}
+
+#numberGuess {
+  font-size: 2rem;
+}
+
